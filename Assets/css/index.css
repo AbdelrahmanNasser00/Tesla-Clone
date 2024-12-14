@@ -1,0 +1,726 @@
+/* Website cloned from https://www.tesla.com/ */
+/* By Abdelrahman Abdelnasser */
+/* Enjoy with details🤗*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.announcment {
+    background-color: #f4f5f5;
+    font-size: 14px;
+    height: 52px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.announcment p {
+    display: inline;
+    position: relative;
+    top: 18px;
+}
+
+.announcment button {
+    display: inline;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+    position: relative;
+    top: 18px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #393c41;
+}
+
+.announcment button:hover {
+    border-bottom: 2px solid black;
+    color: #222;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background-image: url("../imgs/Homepage-APR-Promo-Hero-Desktop-v3.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    top: 52px;
+}
+
+.navbar {
+    width: 100%;
+    color: white;
+    display: inline-block;
+}
+
+.navbar .logo {
+    display: inline-block;
+    height: 48px;
+    margin-top: 6px;
+    width: 15%;
+    text-align: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-icon {
+    width: 120px;
+    height: auto;
+}
+
+.logo a {
+    padding-right: 55px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* nav buttons */
+.navbar .navigation-buttons {
+    display: inline-block;
+    height: 48px;
+    margin-top: 6px;
+    text-align: center;
+    width: 69%;
+    padding: 0;
+}
+
+.navbar .navigation-buttons li {
+    display: inline-block;
+}
+
+.navbar .navbar-buttons {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 9px 18px 10px 18px;
+    border-radius: 5px;
+    margin: 0px;
+    color: white;
+    font-size: 13px;
+}
+
+.navbar .navbar-buttons:hover {
+    background-color: rgba(0, 0, 1, 0.05);
+}
+
+.navbar-action-icons {
+    display: inline-block;
+    height: 48px;
+    right: 32px;
+    margin-top: 6px;
+    width: 15%;
+    padding: 0;
+    text-align: end;
+}
+
+.navbar-action-icons svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.navbar-action-icons button {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar-action-icons li {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+.navbar-action-icons li:nth-child(3) {
+    padding-right: 24px;
+}
+
+.navbar-action-icons button:hover {
+    background-color: rgba(0, 0, 1, 0.05);
+}
+
+.hero-content {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: fit-content;
+}
+
+.hero-content .hero-section-h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero-content .hero-section-buttons {
+    width: 100%;
+    display: inline-block;
+}
+
+.hero-content button {
+    width: 252px;
+    background-color: #f4f4f4;
+    border: none;
+    height: 42px;
+    border-radius: 5px;
+    margin-inline: 8px;
+}
+
+.hero-content button a {
+    color: #393c41;
+    font-weight: 600;
+}
+
+.hero-content button:hover {
+    background-color: #eee;
+}
+
+/* second section */
+.second-section {
+    background-image: url("../imgs/Homepage-Model-Y-Desktop-US-v2.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.second-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.second-section h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0px 0px 5px 0px;
+}
+
+.second-section a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.second-section a:hover {
+    border-bottom: 2px solid white;
+}
+
+.second-section p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+.section-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-buttons button {
+    width: 264px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+.section-buttons button:first-child {
+    background-color: #3e6ae1;
+    border: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.section-buttons button:nth-child(2) {
+    color: #393c41;
+    background-color: white;
+}
+
+/* third section */
+.third-section {
+    background-image: url("../imgs/Homepage-Model-3-Desktop-US.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.third-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.third-section h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0px 0px 5px 0px;
+}
+
+.third-section a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.third-section a:hover {
+    border-bottom: 2px solid white;
+}
+
+.third-section p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+/* fourth section */
+.fourth-section {
+    background-image: url("../imgs/Homepage-Model-X-Desktop-US\ \(1\).png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.fourth-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.fourth-section h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0px 0px 5px 0px;
+}
+
+.fourth-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.fourth-section p a {
+    border-bottom: 1px solid white;
+}
+
+.fourth-section p a:hover {
+    border-bottom: 2px solid white;
+}
+
+.fourth-section p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+/* fifth section */
+.fifth-section {
+    background-image: url("../imgs/Homepage-Model-S-Desktop-US.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.fifth-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.fifth-section h3 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0px 0px 5px 0px;
+}
+
+.fifth-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.fifth-section p a {
+    border-bottom: 1px solid white;
+}
+
+.fifth-section p a:hover {
+    border-bottom: 2px solid white;
+}
+
+.fifth-section p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+
+
+/* sixth section */
+.sixth-section {
+    background-image: url("../imgs/Homepage-Cybertruck-Desktop-v3.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.sixth-section .cybertruck-Logo {
+    padding-top: 100px;
+}
+
+.sixth-section .cybertruck-Logo img {
+    width: 100%;
+}
+
+.sixth-section h3 {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    margin-top: 0px;
+}
+
+.sixth-section-buttons {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.sixth-section-buttons button {
+    width: 264px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #a2a3a5;
+    backdrop-filter: blur(10px);
+    font-size: 12px;
+    background-color: rgb(17, 17, 17, 0.7);
+}
+
+.sixth-section-buttons button:hover {
+    background-color: rgb(17, 17, 17, 0.6);
+}
+
+.sixth-section-buttons button:focus {
+    background-color: transparent;
+    color: #eee;
+}
+
+.sixth-section-buttons button:nth-child(1) {
+    border-top: 3px solid #a2a3a5;
+}
+
+.sixth-section-buttons button:nth-child(1):focus {
+    border-top: 3px solid white;
+
+}
+
+.sixth-section-buttons button:nth-child(2) {
+    border-top: 3px solid transparent;
+}
+
+.sixth-section-buttons button:nth-child(2):focus {
+    border: 1px solid white;
+}
+
+/* seventh section */
+.seventh-section {
+    background-image: url("../imgs/Homepage-SolarPanels-01-Desktop.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.seventh-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.seventh-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.seventh-section p a {
+    border-bottom: 1px solid white;
+    font-size: 34px;
+}
+
+.seventh-section p a:hover {
+    border-bottom: 2px solid white;
+}
+
+.seventh-section p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+/* eighth section */
+.eighth-section {
+    background-image: url("../imgs/Homepage-SolarRoof-Desktop-US.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.eighth-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.eighth-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.eighth-section p {
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* ninth section */
+.ninth-section {
+    background-image: url("../imgs/Homepage-Powerwall-Desktop-US.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.ninth-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+/* tenth section */
+.tenth-section {
+    background-image: url("../imgs/Homepage-Accessories-Desktop-US.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 883px;
+}
+
+.tenth-section h1 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.tenth-section-buttons {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.tenth-section-buttons button {
+    background-color: #3e6ae1;
+    border: none;
+    color: white;
+    width: 264px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+/* eleventh section */
+.eleventh-section {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    height: 883px;
+}
+
+.eleventh-section .background-video {
+    position: absolute;
+    width: 100%;
+    height: 883px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.eleventh-section .content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    left: 0;
+    top: 55%;
+    margin-left: 48px;
+    font-size: 20px;
+}
+
+.eleventh-section-buttons {
+    text-align: left;
+}
+
+.eleventh-section-buttons button {
+    width: 204px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    color: #393c41;
+    background-color: white;
+    padding-right: 30px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+}
+
+.footer-content {
+    margin-inline: 34%;
+    font-size: 12px;
+    color: #5c5e62;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.footer a:hover {
+    border-bottom: 2px solid black;
+}
+
+.footer sup,
+.sixth-section sup,
+.third-section sup,
+.second-section sup {
+    font-size: 7px;
+    line-height: 7px;
+    font-weight: 400;
+    position: static;
+}
+
+
+sup {
+    font-size: 7px;
+    font-weight: 400;
+    top: -8px;
+    position: relative;
+}
+
+.footer-links {
+    text-align: center;
+    padding-block: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5c5e62;
+}
+
+.footer-button {
+    width: 100%;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.footer-button img {
+    position: relative;
+    top: 5px;
+    width: 20px;
+}
+
+.footer-button h5 {
+    display: inline-block;
+    font-size: 17px;
+    margin-block: 20px;
+}
